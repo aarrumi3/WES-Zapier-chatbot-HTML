@@ -33,13 +33,15 @@
             text-align: center;
         }
         .grid-item img {
-            width: 150px; /* Set a fixed width for images */
-            height: 150px; /* Set a fixed height for images */
-            object-fit: cover; /* Ensure images cover the area without distortion */
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
             border-radius: 8px;
         }
+        .buttons {
+            margin-top: 10px;
+        }
         .buttons button {
-            margin: 10px;
             padding: 10px 20px;
             font-size: 1em;
             border: none;
@@ -47,8 +49,8 @@
             background-color: #007BFF;
             color: white;
             cursor: pointer;
-            width: 80%;
-            max-width: 300px;
+            width: 100%;
+            max-width: 150px;
         }
     </style>
 </head>
@@ -57,19 +59,27 @@
         <div class="grid">
             <div class="grid-item">
                 <img src="https://raw.githubusercontent.com/aarrumi3/WES-Zapier-chatbot-HTML/WES/looking_at_screen.jpg" alt="Appointments">
-                <button onclick="window.location.href='https://pp-wfe-101.advancedmd.com/133156/onlinescheduling/v2/patients'">Appointments</button>
+                <div class="buttons">
+                    <button onclick="window.location.href='https://pp-wfe-101.advancedmd.com/133156/onlinescheduling/v2/patients'">Appointments</button>
+                </div>
             </div>
             <div class="grid-item">
                 <img src="https://raw.githubusercontent.com/aarrumi3/WES-Zapier-chatbot-HTML/WES/male_smiling_using_phone.jpg" alt="LASIK / EVO ICL">
-                <button onclick="window.location.href='https://westlakeeyes.com/lasik-self-test/'">LASIK / EVO ICL</button>
+                <div class="buttons">
+                    <button onclick="window.location.href='https://westlakeeyes.com/lasik-self-test/'">LASIK / EVO ICL</button>
+                </div>
             </div>
             <div class="grid-item">
                 <img src="https://raw.githubusercontent.com/aarrumi3/WES-Zapier-chatbot-HTML/WES/contact.jpg" alt="Cataracts / RLE">
-                <button onclick="window.location.href='https://westlakeeyes.com/premium-lens-self-test/'">Cataracts / RLE"></button>
+                <div class="buttons">
+                    <button onclick="window.location.href='https://westlakeeyes.com/premium-lens-self-test/'">Cataracts / RLE</button>
+                </div>
             </div>
             <div class="grid-item">
                 <img src="https://raw.githubusercontent.com/aarrumi3/WES-Zapier-chatbot-HTML/WES/senior_smiling.jpg" alt="Eye Exams / Optical">
-                <button onclick="window.location.href='https://westlakeeyes.com/contact-us/'">Eye Exams / Optical</button>
+                <div class="buttons">
+                    <button onclick="window.location.href='https://westlakeeyes.com/contact-us/'">Eye Exams / Optical</button>
+                </div>
             </div>
         </div>
     </div>
